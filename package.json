@@ -1,0 +1,35 @@
+{
+  "name": "backend-development",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victortanzy123/Backend-Development.git"
+  },
+  "author": "victortanzy123 <83770436+victortanzy123@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.5",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  },
+  "description": "Backend Development with NodeJS, expressJS &amp; MongoDB",
+  "bugs": {
+    "url": "https://github.com/victortanzy123/Backend-Development/issues"
+  },
+  "homepage": "https://github.com/victortanzy123/Backend-Development#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app"
+  }
+}
