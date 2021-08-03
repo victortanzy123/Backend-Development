@@ -27,6 +27,8 @@ router.get("/me", authToken, async (req, res) => {
         .status(400)
         .json({ message: "There is no profile for this user yet." });
     }
+
+    res.json(profile);
   } catch (error) {
     console.error(error.message);
     res.status(500).send("Server Error");

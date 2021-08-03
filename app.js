@@ -20,6 +20,8 @@ app.use(express.json({ extend: false }));
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
+app.use("/api/items", require("./routes/api/item"));
+app.use("api/orders", require("./routes/api/order"));
 // Listen to Backend URL:
 app.listen(PORT, () => {
   console.log(`Listening to PORT ${PORT}`);
