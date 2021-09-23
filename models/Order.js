@@ -15,6 +15,10 @@ const OrderSchema = new mongoose.Schema({
       ref: "item",
     },
   ],
+  status: {
+    type: String,
+    required: true,
+  },
   dateOfOrder: {
     type: Date,
     default: Date.now(),

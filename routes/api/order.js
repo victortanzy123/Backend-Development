@@ -52,6 +52,7 @@ router.post(
         user: req.user.id,
         profile: profile._id,
         items: itemsInCart,
+        status: "Pending, awaiting Confirmation",
       });
 
       const order = await newOrder.save();

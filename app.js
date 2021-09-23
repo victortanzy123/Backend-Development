@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 const connectDB = require("./config/MongoDB");
 
@@ -7,6 +8,14 @@ const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB:
 connectDB();
+
+// Middleware to deal with CORS error:
+app.use(
+  cors({
+    origin: `http://localhost:3000`,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 
 // Middleware to get data parse in req.body:
 app.use(express.json({ extend: false }));
